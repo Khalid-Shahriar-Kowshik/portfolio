@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Personal Portfolio CSE310</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <!-- Navbar Start-->
+  
+    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+      <div class="container-lg">
+        <a class="navbar-brand text-danger fw-bold fs-4" href="#">Web Portfolio</a>
+        <!-- Single Dropdown -->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle btn-danger px-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#home">Home</a></li>
+            <li><a class="dropdown-item" href="#about">About</a></li>
+            <li><a class="dropdown-item" href="#achievements">Achievements</a></li>
+            <li><a class="dropdown-item" href="#projects">Projects</a></li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Navbar End-->
+
+ <!-- Home Section Start-->
+ <section class="home py-5" id="home">
+  <div class="container-lg">
+    <div class="row min-vh-90 align-items-center">
+      
+      <!-- Left Column: Image -->
+      <div class="col-md-6 text-center">
+        <div class="home-img">
+          <img src="img/profile.png" alt="profile img" class="rounded-circle mw-100">
+        </div>
+      </div>
+
+      <!-- Right Column: Text -->
+      <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+        <div class="home-text">
+          <p class="text-muted mb-1 h5">Hello, I'm an inspiring</p>
+          <h3 class="text-danger text-uppercase fs-1 fw-bold">
+            <span id="typed-text"></span>
+          </h3>
+          <h2 class="fs-4">Khalid Shahriar Kowshik</h2>
+          <p class="mt-4 text-muted">"Keep pushing through the bugs—every error is a step closer to mastering the code."</p>
+          <a href="https://github.com/Khalid-Shahriar-Kowshik" class="btn btn-primary" target="_blank">My Github</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Home Section End-->
+
+<!-- About Section Start-->
+<section class="about bg-white py-5" id="about">
+  <div class="container-lg py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="fw-bold mb-5">About Me</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-text mb-4">
+          <h3>Passionate CSE Student Exploring MERN Stack & Data Science</h3>
+          <p>My topics of current interests are: MERN Stack Development, Cross Platform Application Development 
+            via React Native Framework and Data Science and Machine Learning. I work tirelessly everyday to attain knowledge in these fields,
+            as knowledge is the most powerful tool in the 21st century. I strive for excellence not just for myself, but to contribute positively to the world and create innovative solutions for a better future.
+
+          </p>
+        </div>
+        
+        <!-- Facts row -->
+        <div class="row mb-4">
+          <div class="col-sm-4">
+            <div class="fact-item text-center">
+              <h4>20%</h4>
+              <p>MERN Stack Engineer</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="fact-item text-center">
+              <h4>30%</h4>
+              <p>Data Science Engineer</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="fact-item text-center">
+              <h4>10%</h4>
+              <p>React Native Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Download CV Button and Social Media Links Side by Side -->
+        <div class="d-flex align-items-center mt-4">
+          <a href="cv/my_cv.pdf" download class="btn btn-danger me-5">Download CV</a>
+          
+          <div class="d-flex">
+            <a href="https://www.facebook.com/kowshik957/" target="_blank" class="text-dark me-3" rel="noopener noreferrer">
+              <img src="img/icons/facebook.png" alt="Facebook" width="50%">
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="text-dark me-3" rel="noopener noreferrer">
+              <img src="img/icons/linkedin.png" alt="LinkedIn" width="50%">
+            </a>
+            <a href="https://discord.gg/EKbzzXEb" target="_blank" class="text-dark me-3" rel="noopener noreferrer">
+              <img src="img/icons/discord.png" alt="Discord" width="50%">
+            </a>
+            <a href="https://leetcode.com/u/6zbOJQOCuy/" target="_blank" class="text-dark me-3" rel="noopener noreferrer"> 
+              <img src="img/icons/leetcode.png" alt="LeetCode" width="50%">
+            </a>
+            <a href="https://www.kaggle.com/khalidshahriar" target="_blank" class="text-dark" rel="noopener noreferrer">
+              <img src="img/icons/kaggle.png" alt="Kaggle" width="50%">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Skills Progress Bars -->
+        <div class="skill-item mb-4">
+          <h3 class="fs-6">HTML/CSS</h3>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="skill-item mb-4">
+          <h3 class="fs-6">JavaScript</h3>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        
+        <div class="skill-item mb-4">
+          <h3 class="fs-6">Python</h3>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="skill-item mb-4">
+          <h3 class="fs-6">Bootstrap</h3>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="skill-item mb-4">
+          <h3 class="fs-6">Django</h3>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="skill-item mb-4">
+          <h3 class="fs-6">MERN Frameworks</h3>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Section End-->
+
+<!-- Achievement Section Start-->
+<section class="achievements bg-white py-5" id="achievements">
+  <div class="container-lg py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="fw-bold mb-5">My Achievements</h2>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://aimlab-stats.com/profile/kowshik957" target="_blank">
+                  <img src="img/Acievements/image.png" class="d-block w-100" alt="AimLab Master IV">
+                </a>
+                <div class="carousel-caption d-none d-md-block bg-dark-opacity">
+                  <h5 class="text-danger fw-bold text-uppercase">AimLab Master IV</h5>
+                  <p class="text-white fw-bold fst-italic">Reached the 90th percentile of mechanical aiming in FPS shooters</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://tracker.gg/valorant/profile/riot/Free%20Elo%232247/overview" target="_blank">
+                  <img src="img/Acievements/image (1).png" class="d-block w-100" alt="Valorant Immortal Rank">
+                </a>
+                <div class="carousel-caption d-none d-md-block bg-dark-opacity">
+                  <h5 class="text-danger fw-bold text-uppercase">Valorant Immortal Rank</h5>
+                  <p class="text-white fw-bold fst-italic">My peak rank is Immortal in Valorant and current rank is Ascendant 3 56RR</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://app.voltaic.gg/u/kowshik957" target="_blank">
+                  <img src="img/Acievements/image (2).png" class="d-block w-100" alt="Consistent Voltaic Aimer">
+                </a>
+                <div class="carousel-caption d-none d-md-block bg-dark-opacity">
+                  <h5 class="text-danger fw-bold text-uppercase">Consistent Voltaic Aimer</h5>
+                  <p class="text-white fw-bold fst-italic">Aiming to reach Grandmaster by the end of 2025</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Acievements/image (3).png" class="d-block w-100" alt="Earnings">
+                <div class="carousel-caption d-none d-md-block bg-dark-opacity">
+                  <h5 class="text-danger fw-bold text-uppercase">44,000 Bdt Earnings in Total!!</h5>
+                  <p class="text-white fw-bold fst-italic">From 2016 to 2024, I earned a total of 44,000 Bdt, which I used to upgrade my PC and buy my first 144hz gaming monitor!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .carousel-caption {
+    transition: background-color 0.3s ease;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .carousel-caption:hover {
+    background-color: rgba(255, 0, 0, 0.8); /* Change color on hover */
+  }
+  
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px; /* Add rounded corners */
+    filter: brightness(0.9); /* Slightly dim images */
+    transition: transform 0.5s ease;
+  }
+
+  .carousel-item img:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+
+  .bg-dark-opacity {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px;
+    border-radius: 5px;
+  }
+</style>
+
+<!-- Achievement Section End-->
+<!-- Portfolio Section Start-->
+<section class="portfolio py-5" id="projects">
+  <div class="container-lg py-4">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="fw-bold mb-5">My Projects</h2>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-lg">
+      <div class="d-flex justify-content-center">
+        <!-- Card 1 -->
+        <div class="card m-3" style="width: 18rem;">
+          <img src="img/projects/snake.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Classic Snake Game</h5>
+            <p class="card-text text-muted">Pygame Tutorial and learning OOP concepts of python by developing games through pygame module</p>
+            <div class="mt-auto">
+              <a href="https://github.com/Khalid-Shahriar-Kowshik/Pygame-Projects/tree/main/1_snake_game" class="btn btn-primary">Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card m-3" style="width: 18rem;">
+          <img src="img/projects/fitness.jpg" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Fitness Center Java Application</h5>
+            <p class="card-text text-muted">A fitness Center app to keep track of Trainers,Trainer info, Clients, Workout Plans, etc.
+              This project applies all the fundamental OOP concepts</p>
+            <div class="mt-auto">
+              <a href="https://github.com/Khalid-Shahriar-Kowshik/Java-Projects/tree/main/FitnessApplication" class="btn btn-primary">Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card m-3" style="width: 18rem;">
+          <img src="img/projects/data science.jpg" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Data Science & Machine Learning</h5>
+            <p class="card-text text-muted">Contains all my reposits on Machine Learning and Data Science</p>
+            <div class="mt-auto">
+              <a href="https://github.com/Khalid-Shahriar-Kowshik/Machine-Learning-and-Data-Science" class="btn btn-primary" target="_blank">Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Portfolio Section End-->
+
+<!-- Contact Section Start-->
+<section class="portfolio py-5" id="contact">
+  <div class="container-lg py-4">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="fw-bold mb-5">Contact Me</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Left Column with Contact Information -->
+      <div class="col-md-5">
+        <div class="contact-item d-flex mb-3">
+          <div class="icon fs-4 text-danger">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="text ms-3">
+            <h3 class="fs-5">Email</h3>
+            <p class="text-muted">khalidkowshikcse@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item d-flex mb-3">
+          <div class="icon fs-4 text-danger">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="text ms-3">
+            <h3 class="fs-5">Phone</h3>
+            <p class="text-muted">+8801315665302</p>
+          </div>
+        </div>
+
+        <div class="contact-item d-flex mb-3">
+          <div class="icon fs-4 text-danger">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="text ms-3">
+            <h3 class="fs-5">Address</h3>
+            <p class="text-muted">429/A Senpara Parbata, Mirpur-10</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column with Contact Form -->
+      <div class="col-md-7">
+        <div class="contact-form text-end">
+          <form>
+            <div class="row mb-3">
+              <div class="col-lg-6">
+                <input type="text" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-0">
+              </div>
+              <div class="col-lg-6">
+                <input type="text" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-0">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-lg-12">
+                <input type="text" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-0">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-lg-12">
+                <textarea placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-0" rows="4"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section Start-->
+
+<!-- Footer Start-->
+ <footer class="footer border-top py-4">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="m-0 text-center text-muted">&copy; 2024 Khalid Shahriar</p>
+      </div>
+    </div>
+  </div>
+ </footer>
+<!-- Footer End-->
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  var options = {
+    strings: ["Cross Platform Developer", "Data Analyst", "MERN Stack Engineer"],
+    typeSpeed: 60,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true
+  };
+
+  var typed = new Typed("#typed-text", options);
+</script>
+
+
+</body>
+</html>
